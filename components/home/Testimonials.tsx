@@ -45,7 +45,7 @@ export default function Testimonials() {
                   {/* Quote */}
                   <blockquote className="flex-1 mb-6">
                     <p className="font-body text-base lg:text-lg text-white leading-relaxed">
-                      "{testimonial.q}"
+                      "{testimonial.text}"
                     </p>
                   </blockquote>
 
@@ -54,10 +54,10 @@ export default function Testimonials() {
                     <div className="flex items-center justify-between">
                       <div>
                         <div className="font-head font-bold text-base text-white mb-1">
-                          {testimonial.who}
+                          {testimonial.name}
                         </div>
                         <div className="font-mono text-[10px] text-jr-muted-2 tracking-[0.14em] uppercase">
-                          {testimonial.ctx}
+                          {testimonial.role}
                         </div>
                       </div>
                       <div className="w-10 h-10 rounded-full bg-jr-gold-softer border border-jr-gold-soft flex items-center justify-center">
