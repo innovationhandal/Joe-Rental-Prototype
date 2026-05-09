@@ -3,9 +3,9 @@ export const SITE_CONFIG = {
   phone: "+62 812-2345-6789",
   phoneDisplay: "0812-2345-6789",
   email: "halo@joegarage.id",
-  address: "Jl. Pasirkaliki No. 88, Bandung",
+  address: "Jl. Terusan Cigadung No.18, Sekeloa, Kecamatan Coblong, Kota Bandung, Jawa Barat 40134",
   telepon: "022-1234-5678",
-  mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.799909977815!2d107.60981!3d-6.91474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTQnNTMuMSJTIDEwN8KwMzYnMzUuMyJF!5e0!3m2!1sen!2sid!4v1234567890",
+  mapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126744.92468624233!2d107.56126810727584!3d-6.917016855119198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e776da80754b%3A0xbeaa6da3abd6cc34!2sJOE%20Rental%20mobil%20%26%20City%20Tour%20Bandung!5e0!3m2!1sid!2sid!4v1778229769197!5m2!1sid!2sid",
   stats: {
     tahunDiBandung: "12",
     jumlahArmada: "40+",
@@ -19,14 +19,32 @@ export const SITE_CONFIG = {
   },
 };
 
-export const CONTACT_INFO = {
-  whatsapp: SITE_CONFIG.phone,
-  phone: SITE_CONFIG.telepon,
-  email: SITE_CONFIG.email,
-  address: SITE_CONFIG.address,
-  hours: "Buka 24 jam, 7 hari seminggu",
-  driverStandby: "Driver standby 06.00 - 23.00",
-};
+export const CONTACT_INFO = [
+  {
+    label: "WhatsApp",
+    value: "+62 812-2345-6789",
+    note: "Response time: < 5 menit (jam kerja)",
+    link: "https://wa.me/6281223456789",
+  },
+  {
+    label: "Telepon",
+    value: "022-1234-5678",
+    note: "Senin – Minggu, 06.00 – 23.00",
+    link: "tel:+62221234567",
+  },
+  {
+    label: "Email",
+    value: "halo@joegarage.id",
+    note: "Response time: < 24 jam",
+    link: "mailto:halo@joegarage.id",
+  },
+  {
+    label: "Alamat Pool",
+    value: "Jl. Pasirkaliki No. 88, Bandung",
+    note: "Buka 24 jam, silakan mampir kapan saja",
+    link: "#",
+  },
+];
 
 export const ARMADA = [
   { id: 1, name: "Toyota Innova Reborn", type: "MPV", seats: "7 seats", price: "Rp 750k", per: "/ hari + driver", tag: "Populer", img: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80" },
